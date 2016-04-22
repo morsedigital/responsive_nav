@@ -1,6 +1,6 @@
 {
   "name": "@morsedigital/responsive_nav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vanilla Responsive Nav",
   "main": "index.js",
   "babel": {
@@ -13,9 +13,21 @@
     "assets_out": "./lib",
     "karma": {
       "input": "./spec",
-      "transforms" : [
-        ["rewireify", { "ignore": "moof" }],
-        ["babelify", {"presets": ["es2015"]}]
+      "transforms": [
+        [
+          "rewireify",
+          {
+            "ignore": "moof"
+          }
+        ],
+        [
+          "babelify",
+          {
+            "presets": [
+              "es2015"
+            ]
+          }
+        ]
       ]
     }
   },
