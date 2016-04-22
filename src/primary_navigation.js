@@ -103,7 +103,10 @@ class PrimaryNavClass {
     this.dropdownParentsMobile = [];
     this.list = document.getElementById(this.config.list_id);
     this.toggle = document.getElementById(this.config.toggle_id);
-    this.toggleMobile = document.getElementById(this.config.toggle_mobile_id);
+    if(this.config.toggle_mobile_id){
+      this.toggleMobile = document.getElementById(this.config.toggle_mobile_id);
+    }
+
     this.render();
   }
 
