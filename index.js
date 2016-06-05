@@ -1,1 +1,1 @@
-module.exports = require('./lib/primary_navigation')
+module.exports = require('./lib/responsive_navigation');
