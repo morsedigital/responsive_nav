@@ -1,6 +1,6 @@
 {
   "name": "@morsedigital/responsive_nav",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Ian Hatton",
   "description": "Vanilla responsive navigation",
   "keywords": [
@@ -56,7 +56,6 @@
     "test:watch": "asset-pipeline-karma -w",
     "test:mac": "asset-pipeline-karma -b"
   },
-  
   "devDependencies": {
     "@djforth/ap_karma": "~1.1.11",
     "@djforth/ap_utils": "^2.0.13",
