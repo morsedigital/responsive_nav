@@ -2,14 +2,18 @@
   "name": "@morsedigital/responsive_nav",
   "version": "1.0.1",
   "author": "Ian Hatton",
-  "bugs": {
-    "url": "https://github.com/morsedigital/responsive_nav/issues"
-  },
   "description": "Vanilla responsive navigation",
-  "homepage": "https://github.com/morsedigital/responsive_nav#readme",
   "keywords": [
     "responsive navigation"
   ],
+  "bugs": {
+    "url": "https://github.com/morsedigital/responsive_nav/issues"
+  },
+  "homepage": "https://github.com/morsedigital/responsive_nav#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morsedigital/responsive_nav.git"
+  },
   "license": "MIT",
   "main": "index.js",
   "babel": {
@@ -40,6 +44,9 @@
       ]
     }
   },
+  "eslintConfig": {
+    "extends": "morsedigital"
+  },
   "scripts": {
     "build": "babel src -x '.js'  -d lib",
     "build:watch": "babel src -x '.js' -w --source-maps  -d lib",
@@ -49,10 +56,7 @@
     "test:watch": "asset-pipeline-karma -w",
     "test:mac": "asset-pipeline-karma -b"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/morsedigital/responsive_nav.git"
-  },
+  
   "devDependencies": {
     "@djforth/ap_karma": "~1.1.11",
     "@djforth/ap_utils": "^2.0.13",
