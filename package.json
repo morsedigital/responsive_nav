@@ -8,6 +8,21 @@
       "es2015"
     ]
   },
+  "eslintConfig": {
+    "extends": "morsedigital",
+    "globals": {
+      "fdescribe": true,
+      "describe": false,
+      "beforeEach": false,
+      "afterEach": false,
+      "it": true,
+      "expect": true,
+      "spyOn": true
+    },
+    "rules": {
+      "require-jsdoc": 1
+    }
+  },
   "assets": {
     "assets_in": "./src",
     "assets_out": "./lib",
@@ -51,7 +66,7 @@
   },
   "homepage": "https://github.com/morsedigital/responsive_nav#readme",
   "devDependencies": {
-    "@djforth/ap_karma": "~1.1.11",
+    "@djforth/ap_karma": "~1.4.3",
     "@djforth/ap_utils": "^2.0.13",
     "@djforth/morse-jasmine": "^1.0.10",
     "babel": "^6.5.2",
@@ -59,8 +74,9 @@
     "babel-eslint": "^6.0.2",
     "babel-polyfill": "^6.7.2",
     "babel-preset-es2015": "^6.6.0",
-    "eslint": "^2.3.0",
-    "eslint-config-google": "^0.5.0",
+    "eslint": "^3.2.2",
+    "eslint-config-google": "^0.6.0",
+    "eslint-config-morsedigital": "^1.0.3",
     "estraverse-fb": "^1.3.1",
     "jasmine-ajax": "^3.2.0",
     "lodash": "^4.*.*",
